@@ -1,0 +1,13 @@
+
+    body {
+        margin: 0;
+        font-family: 'Roboto', arial;
+        padding-top: 50px;
+        position: relative;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+  

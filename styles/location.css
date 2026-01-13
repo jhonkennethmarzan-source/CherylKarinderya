@@ -1,0 +1,289 @@
+.common-section {
+ padding: 60px 25px 60px 25px;
+}
+
+.background-color {
+  background-color: #fbe7c8;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.background-location {
+ background-color: #f8bc86;
+  padding: 10px 10px 5px 10px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0px 0px 10px 0px;
+}
+
+.location-logo {
+  width: 100%;
+}
+
+.first-title {
+  margin: 0;
+  color: rgb(60, 60, 60);
+  font-size: 40px;
+}
+
+.first-description {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(39, 39, 39, 0.789);
+}
+
+/* =========================================
+          Second Section 1st part left
+   ========================================= */
+
+
+.second-common-section {
+  background-color:  #faf7f2;
+  padding: 64px 24px;
+}
+
+@media (min-width: 1099px){
+  .card-holder {
+    max-width: 1100px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    padding: 0;
+  }
+
+  .first-card-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  }
+}
+
+
+@media (max-width: 1100px){
+ .card-holder {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .first-card-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+}
+
+.card-box {
+  margin-bottom: 20px;
+  padding: 24px 24px;
+  border-radius: 9px;
+  border: 1px solid rgba(178, 178, 178, 0.488);
+  display: flex;
+}
+
+.card-color {
+  background-color: white;
+}
+
+
+.logo-picture-container {
+  width: 40px;
+  height: 40px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 50%;
+  margin-right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-logo-bg-color{
+  background-color: #fff6e8;
+}
+
+.logo-picture {
+  width: 70%
+}
+
+.text-container {
+  line-height: 1.8;
+}
+
+.title-content {
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.first-title-color {
+  color: rgb(58, 58, 58);
+}
+
+.text-content {
+  font-size: 15px;
+  margin: 0;
+}
+
+.first-color {
+  color: rgb(92, 91, 91);
+}
+
+
+/* =========================================
+          Second Section 1st part right
+   ========================================= */
+
+
+
+.second-card-color {
+    background-color: #8fa87d;
+}
+
+.second-card-box {
+  margin-bottom: 20px;
+  padding: 24px 24px;
+  border-radius: 9px;
+  border: 1px solid rgba(178, 178, 178, 0.488);
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.second-logo-bg-color {
+  background-color: rgba(228, 225, 225, 0.732);
+}
+
+.clock-picture {
+  width: 90%;
+}
+
+.second-title-color {
+  color: rgb(244, 242, 242);
+}
+
+.content-text-container {
+  display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px solid #ffffff4d;
+    padding-bottom: 8px; 
+}
+
+.second-color {
+  color: rgb(243, 243, 243);
+}
+
+.content-spacing {
+  margin-bottom: 14px;
+}
+
+.last-title {
+  font-size: 16px;
+  color: rgb(44, 44, 44);
+  margin: 5px 0px 12px 0px; 
+}
+
+.last-content {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* =========================================
+          Second Section 2nd part
+   ========================================= */
+
+
+
+.second-card-section {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    background-color: #fbe7c8;
+    border-radius: 10px;
+    border: 1px solid rgba(178, 178, 178, 0.488);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.second-card-section iframe {
+  width: 90%;
+  height: 85%;
+  position: absolute;
+  top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.2);
+
+}
+
+.map-view-text {
+  font-size: 25px;
+  margin: 10px 0px 10px 0px;
+  color: rgb(68, 67, 67);
+}
+
+/* =========================================
+          second section 3rd part
+   ========================================= */
+
+  .third-card-section {
+    padding: 32px;
+    margin-top: 32px;
+    background-color: #fbe7c8;  
+    border-radius: 10px;
+    border: 1px solid rgba(178, 178, 178, 0.488);
+  }
+
+  .grid-landmarks {
+    display: grid;
+    width: 100%;
+
+  }
+
+
+@media (min-width: 700px){
+    .grid-landmarks {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+   }
+}
+
+@media (max-width: 701px){
+  .grid-landmarks {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+   }
+}
+
+
+
+
+  .third-card-title {
+    font-size: 18px;
+    color: rgb(58, 58, 58);
+    margin: 0 0 24px 0;
+  }
+
+  .emoji-text {
+    font-size: 40px;
+    margin: 0;
+  }
+
+
+
+
+

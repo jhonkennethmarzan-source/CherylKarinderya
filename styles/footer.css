@@ -1,0 +1,111 @@
+footer{
+    padding: 46px 24px;
+    background-color: #e8e0d5;;
+}
+
+
+
+.grid-footer-container {
+    display: grid;
+    align-items: baseline;
+    column-gap: 15px;
+    row-gap: 15px;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    padding-bottom: 20px; 
+}
+
+@media (max-width: 750){ 
+    .grid-footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.max-width-footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 751px) {
+    .grid-footer-container {
+      grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .max-width-footer {
+    max-width: 1100px;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 0;
+}
+}
+
+
+.text-footer {
+    font-size: 13px;
+    color: rgb(107, 106, 106);
+}
+
+.title-footer {
+  font-size: 16px;
+  color: rgb(61, 61, 61);
+}
+
+
+.socmed-container {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.account-background {
+    display: block;
+    background-color: #fde0bd;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.account-background:hover {
+  background-color: #e0c8ab;
+  transition: 0.2s;
+}
+
+.logo-acc-picture {
+  width: 90%;
+}
+
+.last-footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.margin{
+  margin: 20px 0px 10px 0px;
+}
+
+.phone-number {
+  background-color: #2c2c2ca2;
+  color: white;
+  padding: 8px; 
+  position: absolute;
+  margin-top: -50px;
+  border-radius: 10px;
+  display: none;
+}
+
+.account-background:hover .phone-number {
+  display: block;
+  transition: 0.5s;
+}
+
+

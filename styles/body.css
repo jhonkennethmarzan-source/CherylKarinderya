@@ -1,0 +1,400 @@
+
+/* =========================================
+   1. HERO SECTION (First Section)
+   ========================================= */
+      .first-section {
+  background-image:
+    linear-gradient(
+    rgba(230, 126, 34, 0.8),
+    rgba(230, 126, 34, 0.8)
+  ),
+  url("../pictures/background-pict-1.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px 80px 20px;
+    }
+    .first-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-picture {
+      width: 180px;
+    }
+    .business-name{
+      color: white;
+      font-size: 45px;
+      margin: 20px 0px 15px 0px;
+    }
+    .tagline {
+      color: rgb(243, 234, 234);
+      font-size: 22px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      color: rgb(249, 229, 229);
+      font-size: 15px;
+      max-width: 520px;
+      margin-bottom: 30px;
+    }
+
+
+    @media (min-width: 651px) {
+       .order-button, .view-button {
+      padding: 10px 20px 10px 20px;
+      color: #e67e22;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid white;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+    }
+
+      .order-button {
+      margin-right: 14px;
+     }
+    }
+
+    @media (max-width: 650px){
+      .first-section-button {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .order-button, .view-button {
+      flex: 1;
+      padding: 10px 20px 10px 20px;
+      color: #e67e22;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .order-button {
+      margin-bottom: 15px;
+      }
+    }
+
+    .button-link {
+      display: contents;
+    }
+
+    .order-button:hover, .view-button:hover {
+      background-color: rgb(225, 225, 225);  
+    }
+    
+       /* =========================================
+        2. MENU SECTION (Second Section)
+       ========================================= */
+       
+    .second-section {
+      background-color: #eeeeee;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 80px 20px;
+    }
+
+    .menu-tagline {
+      color: rgba(19, 19, 19, 0.796);
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .description-meal {
+      color: rgba(80, 80, 80, 0.87);
+      font-size: 14px;
+      margin: 12px 0px 40px 0px;
+    }
+
+    .menu-wrapper {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .menu-grid {
+      display: grid;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+
+    @media (max-width: 750px){
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 651px) and (max-width: 1099px){
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1100px){
+      .menu-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px; 
+      overflow: hidden; 
+      transition: 0.3s ease, 0.3s ease;
+      cursor: pointer;
+    }
+
+    .picture-food-container {
+      width: 100%;
+      overflow: hidden; 
+      background-color: rgb(221, 221, 221);
+    }
+
+    .picture-food {
+      width: 100%;
+      height: 200px; 
+      object-fit: cover;
+      display: block;
+      transition: 0.3s ease;
+    }
+
+    .menu-text-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 15px 0px 24px 0px;
+      background-color: white;
+    }
+
+    .menu-container:hover {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
+    }
+
+    .menu-container:hover .picture-food {
+      transform: scale(1.05); 
+    }
+
+    .meal-name {
+      margin-left: 17px;
+    }
+
+    .text-ulam {
+      text-align: left; 
+      flex: 1;
+      color: rgb(249, 197, 100);
+      font-size: 13px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .text-name {
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .meal-info {
+      color: rgb(249, 197, 100);
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    .menu-button {
+      font-size: 14px;
+      padding: 10px 13px 10px 13px;
+      margin-top: 30px;
+      border-radius: 12px;
+      border: 1px solid rgb(193, 192, 192);
+      cursor: pointer;
+    }
+
+    .menu-button:hover {
+      background-color: #e4e2e2;
+      transition: 0.2s;
+    }
+
+
+    /* =========================================
+        3. SPECIAL SECTION (Third Section)
+       ========================================= */
+    
+    .third-section {
+      background-color: #8fa87d;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px 50px 20px;
+    }
+
+    .special-text-container {
+      margin-bottom: 45px;
+    }
+
+    .header-special-text {
+      color: white;
+      font-size: 40px;
+      margin-bottom: 3px;
+    }
+
+    .tagline-special-text {
+      color: rgb(228, 228, 228);
+      font-size: 14px;
+    }
+    .special-wrapper{
+      width: 100%;  
+    }
+
+    .special-grid-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 15px;
+    }
+
+    .special-preview {
+      background-color: white;;
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 0px 12px 0px;
+    }
+
+
+    .menu-grid-special {
+      display: grid;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+
+    .menu-container-special {
+      padding: 15px 0px 15px 0px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
+    }
+
+     @media (max-width: 650px){
+      .menu-grid-special {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 651px) and (max-width: 1099px){
+      .menu-grid-special {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1100px){
+      .menu-grid-special {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    .special-day {
+      font-size: 15px;
+      color: rgb(50, 50, 50);
+      margin: 0;
+    }
+
+    .special-name {
+      margin-top: 12px;
+      margin-bottom: 10px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    /* =========================================
+        4. WHY EAT HERE SECTION (Fourth Section)
+       ========================================= */
+
+  
+ .fourth-section {
+     display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px 50px 20px;
+      background-color: #f4e5d3;
+    }
+    
+    .fourth-section-container {
+     width: 100%;
+    }
+
+  .header-eat-text {
+      color: rgba(40, 40, 40, 0.858);
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+
+
+    @media (min-width: 700px){
+      .preview-grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 50px;
+    }
+      .tagline-fourth-text {
+        max-width: 320px;
+      }
+    }
+
+      @media (max-width: 701px){
+      .preview-grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .preview-container {
+      padding: 10px 10px 20px 10px;
+    }
+
+    .emoji-container {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .title-class {
+      margin: 0;
+      font-size: 18px;
+      color: rgb(88, 88, 88);
+    }
+
+    .tagline-fourth-text {
+      margin-top: 14px;
+      font-size: 16px;
+      color: rgba(99, 98, 98, 0.904);
+      line-height: 1.8;
+    }
+  
+
+ 
+
+
+
+
+
+   
+
